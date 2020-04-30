@@ -1,0 +1,9 @@
+export GOOGLE_APPLICATION_CREDENTIALS=y
+
+#Check temp of PI 
+vcgencmd measure_temp
+
+
+export FLASK_APP=ocr_streamer.py 
+
+flask run -h 0.0.0.0 -p 5000
